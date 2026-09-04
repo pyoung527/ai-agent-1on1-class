@@ -71,9 +71,9 @@ h3 { margin: 0; }
 .orbit { position: absolute; inset: 12%; border: 1px solid rgba(184,255,61,.3); border-radius: 50%; }
 .orbit-b { inset: 25% 3%; transform: rotate(53deg); border-color: rgba(117,167,255,.27); }
 .core { position: absolute; inset: 36%; display: grid; place-items: center; align-content: center; border-radius: 50%; background: var(--acid); color: var(--bg); box-shadow: 0 0 0 14px rgba(184,255,61,.08), 0 0 80px rgba(184,255,61,.18); }
-.core b { font: 700 clamp(18px, 1.8vw, 34px) var(--mono); }
-.core small { font: 700 clamp(7px, .55vw, 11px) var(--mono); margin-top: 6px; }
-.sat { position: absolute; min-width: 86px; padding: 8px 10px; background: var(--surface-2); border: 1px solid var(--line); text-align: center; font: 700 clamp(8px, .55vw, 11px) var(--mono); color: var(--muted); }
+.core b { font-family: var(--sans); font-size: clamp(22px, 2.05vw, 40px); font-weight: 700; line-height: 1; letter-spacing: -.055em; word-break: keep-all; }
+.core small { margin-top: 10px; font-family: var(--sans); font-size: clamp(9px, .65vw, 13px); font-weight: 700; letter-spacing: -.015em; }
+.sat { position: absolute; min-width: 96px; padding: 10px 14px; background: var(--surface-2); border: 1px solid var(--line); text-align: center; font-family: var(--sans); font-size: clamp(10px, .65vw, 13px); font-weight: 600; letter-spacing: -.015em; color: var(--muted); word-break: keep-all; }
 .s1 { left: 2%; top: 23%; } .s2 { right: 2%; top: 21%; } .s3 { left: 8%; bottom: 19%; } .s4 { right: 3%; bottom: 22%; }
 
 .three-columns { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
@@ -95,7 +95,7 @@ h3 { margin: 0; }
 .timeline div:nth-child(4), .timeline div:nth-child(5) { border-color: var(--coral); }
 .timeline div:nth-child(6) { border-color: var(--acid); }
 .timeline b { font: 700 clamp(24px, 2.3vw, 44px) var(--mono); }
-.timeline span { color: var(--muted); font-size: clamp(13px, 1vw, 19px); writing-mode: vertical-rl; transform: rotate(180deg); align-self: center; }
+.timeline span { align-self: flex-start; color: var(--muted); font-size: clamp(13px, 1vw, 19px); font-weight: 600; line-height: 1.35; letter-spacing: -.02em; word-break: keep-all; }
 .big-quote { margin: clamp(28px, 4vh, 52px) 0 0; font-size: clamp(30px, 3.2vw, 61px); line-height: 1.25; font-weight: 600; letter-spacing: -.035em; }
 .big-quote em { color: var(--acid); font-style: normal; }
 .small-quote { text-align: center; font-size: clamp(28px, 2.5vw, 46px); }
